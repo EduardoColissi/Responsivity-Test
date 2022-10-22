@@ -1,63 +1,83 @@
 * {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 :root {
-    --global-primary-background-color: #444242;
-    --global-primary-buttons-color: #FA9401;
+  --global-primary-background-color: #444242;
+  --global-primary-buttons-color: #fa9401;
 }
 
-body {
-    background-color: var(--global-primary-background-color);
-}
 header {
-    background-color: var(--global-primary-background-color);
-    display: flex;
-    width: 100%;
+  background-color: var(--global-primary-background-color);
+  display: flex;
+  width: 100%;
 }
-#HeaderDiv{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+
+#HeaderDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 #LanguageButton {
-    border: none;
-    border-radius: 50px;
-    height: 34px;
-    width: 122px;
-    background-color: #ffff;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  border: none;
+  border-radius: 50px;
+  height: 34px;
+  width: 122px;
+  background-color: #ffff;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#MenuButton img {
+footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  display: inline-flex;
+}
+
+footer img {
+  width: 30px;
+  height: 30px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+@media (min-width: 360px) and (min-height: 640px) {
+  #MenuButton img {
     width: 26px;
     height: 20px;
-}
+  }
 
-#MenuButton {
+  #MenuButton {
     background: none;
     border: none;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
-header button #LogoBrasil {
+  header button #LogoBrasil {
     height: 24px;
     width: 24px;
-}
+  }
 
-header button #LogoDropdown {
+  header button #LogoDropdown {
     height: 5px;
     width: 10px;
-}
+  }
 
-#MainButtons button {
-    background: none;
+  body {
+    background-color: var(--global-primary-background-color);
+    font-weight: 700;
+    height: 100%;
+  }
+
+  #MainButtons button {
     border: solid var(--global-primary-buttons-color) 1px;
     border-radius: 50px;
     width: 265px;
@@ -69,40 +89,36 @@ header button #LogoDropdown {
     padding: 0px;
     margin-bottom: 15px;
     color: #ffff;
-}
+  }
 
-#MainButtons button img {
+  #MainButtons button img {
     width: 16px;
     height: 16px;
     margin-right: 10px;
-}
+  }
 
-#MainButtons button a {
+  #MainButtons button a {
     text-decoration: none;
     color: #ffff;
-}
+  }
 
-body {
-    height: 100%;
-}
-
-#MainButtons {
+  #MainButtons {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
-}
+  }
 
-#LogoIdeia {
+  #LogoIdeia {
     margin-top: 85px;
     margin-bottom: 50px;
-}
+  }
 
-footer {
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    display: inline-flex;
+  #SearchButton {
+    background: var(--global-primary-buttons-color);
+  }
+
+  #OtherMainButtons {
+    background: none;
+  }
 }
